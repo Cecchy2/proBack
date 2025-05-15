@@ -17,6 +17,8 @@ public class Main {
         List<Product> prods = DataGenerator.products(20);
         List<Order> orders = DataGenerator.orders(custs, prods, 10);
 
+        System.out.println(custs);
+
         // Streams base
         System.out.println("1) Books >100:");
         StreamExercises.booksOver100(prods).forEach(System.out::println);
